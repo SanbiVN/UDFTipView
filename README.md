@@ -1,7 +1,8 @@
 # UDFTipView
-⭐HÀM THIẾT LẬP HÀNH ĐỘNG CHUỘT HIỂN THỊ CỬA SỔ TIP CHO EXCEL
-
+⭐HÀM THIẾT LẬP HÀNH ĐỘNG CHUỘT HIỂN THỊ CỬA SỔ TIP CHO EXCEL \
 với Hàm **TipView**
+
+[![Lượt tải](https://img.shields.io/github/downloads/SanbiVN/UDFTipView/total.svg)](https://github.com/SanbiVN/UDFTipView/releases/) 
 
 ![TipView2](https://github.com/user-attachments/assets/fb902b17-5dfb-4c03-838a-17ae8e13ca7e)
 
