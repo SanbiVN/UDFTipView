@@ -15,7 +15,9 @@ với Hàm **TipView**
 
 ### ✳Hướng dẫn sử dụng hàm TipView
 
-Hàm: ```=TipView(Vùng_sự_kiện_chuột, Các_đối_số_thiết_lập...)```
+Hàm: 
+> ```=TipView(Vùng_sự_kiện_chuột, Các_đối_số_thiết_lập...)```
+
 
 Cách viết hàm nhanh, gõ vào ô chuỗi =TipView và ấn tổ hợp phím Ctrl+Shift+A
 
@@ -54,20 +56,21 @@ Gõ hàm TipView_HuongDan() để hiển thị hướng dẫn đầy đủ khi c
 # ✳Các hàm trả về vị trí và thứ tự dòng, cột hoặc ô hiện tại để tham chiếu dữ liệu
 Các hàm này cần tham chiếu cho dữ liệu sẽ hiển thị trong Tip gồm ViewRange và ViewCharts​
 Nếu nhập TipView_ViewRange(H1:J5), thì trong vùng H1:J5 nhập biểu thức phải chứa các hàm bên dưới để tham chiếu\
-✨Ví dụ:
+
+✨Ví dụ: 
+> ```=XLOOKUP(TipView_GetRow(2,TRUE),$B$14:$B$25,$A$14:$A$25,0,0,1)```​
 ​
-```=XLOOKUP(TipView_GetRow(2,TRUE),$B$14:$B$25,$A$14:$A$25,0,0,1)```​
-​
+
 ❄Các hàm |	Kiểu
 -------- | ----------
 **TipView_GetRow**(Cột_tham_chiếu,[Trả_về_ô_đối_tượng]) |	Trả về thứ tự dòng hoặc ô hiện tại đang rê chuột trong bảng, phụ thuộc Vùng_dữ_liệu nhập trong TipView
 **TipView_GetColumn**(Dòng_tham_chiếu,[Trả_về_ô_đối_tượng]) |	Trả về thứ tự cột hoặc ô hiện tại đang rê chuột trong bảng, phụ thuộc Vùng_dữ_liệu nhập trong TipView
 
 ​
-✨Ví dụ với thiết lập:
+✨Ví dụ với thiết lập: 
+> ```=TipView(A2:A10,TipView_Data(A1:E10),TipView_ViewRange(H1:J5))```
 ​
-```=TipView(A2:A10,TipView_Data(A1:E10),TipView_ViewRange(H1:J5))```
-​
+
 Khi gọi: TipView_GetRow(2,TRUE) thì sẽ trả về ô đối tượng dòng trong cột 2 của vùng ô dữ liệu A1:E10
 
 # ✳Các hàm thiết lập vị trí hiển thị cửa sổ Tip quanh ô chọn​
@@ -97,8 +100,9 @@ Khi gọi: TipView_GetRow(2,TRUE) thì sẽ trả về ô đối tượng dòng 
 
 #### ✨Ví dụ với thiết lập:
 ​
-```=TipView(A2:A10,TipView_ViewRange(H1:J5), Tip_LeftTop(),Tip_WindowRightAbove())``` \
+> ```=TipView(A2:A10,TipView_ViewRange(H1:J5), Tip_LeftTop(),Tip_WindowRightAbove())``` \
 ​
+
 Thì cửa sổ sẽ bắt đầu bên trái + phía trên của ô chọn, cửa sổ sẽ nằm ở bên phải + phía trên bắt đầu từ vị trí đó ​
 
 (Mã VBA sẽ sớm cập nhật phiên bản đầu tiên)
